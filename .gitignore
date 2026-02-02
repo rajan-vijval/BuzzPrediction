@@ -1,0 +1,11 @@
+# uv venv
+**/venv
+**.venv
+
+# DS_Store
+**/DS_Store
+**/.DS_Store
+
+# ipynb checkpoints
+**/ipynb_checkpoints
+**/.ipynb_checkpoints
