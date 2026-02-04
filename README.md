@@ -1,7 +1,7 @@
 Link to dataset: https://archive.ics.uci.edu/dataset/248/buzz+in+social+media
 
 # Introduction
-This notebook analyzes the Twitter dataset from the Buzz Prediction dataset. The dataset contains information on the mean number of active discussions (NAD) of an instance's topic. Each row is a measurement of a feature of a topic z, with each feature representing a time (0,6).
+This notebook analyzes the Twitter dataset from the Buzz Prediction dataset. The target variable is the mean number of active discussions (NAD) of an instance's topic. Each row is a measurement of a feature of a topic *z*, with each feature representing a time *t* in (0,6).
 
 There are 11 features in the Twitter dataset. Each are marked with a suffix [0, 6] denoting a timestamp. The dataset description included descriptive statistics on the features.
 - **Number of Created Discussions (NCD):** Number of discussions created at time step t and involving the instance's topic. 
