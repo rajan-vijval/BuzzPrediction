@@ -1,30 +1,10 @@
 Link to dataset: https://archive.ics.uci.edu/dataset/248/buzz+in+social+media
 
 # Introduction
-The Buzz Prediction dataset contains data on two social media sites: Tom's Hardware and Twitter. 
+This notebook analyzes the Twitter dataset from the Buzz Prediction dataset. The dataset contains information on the mean number of active discussions (NAD) of an instance's topic. Each row is a measurement of a feature of a topic z, with each feature representing a time (0,6).
 
-**Mention what each row in the dataset means, ie measurement of feature at time t related to target (mean number of active discussions of an instance's topic).**
-
-This notebook analyzes the Twitter dataset. The dataset contains information on the mean number of active discussions (NAD) of an instance's topic. 
-
-There are 11 features in the Twitter dataset. Each are marked with a suffix [0, 6] denoting a timestamp.
+There are 11 features in the Twitter dataset. Each are marked with a suffix [0, 6] denoting a timestamp. The dataset description included descriptive statistics on the features.
 - **Number of Created Discussions (NCD):** Number of discussions created at time step t and involving the instance's topic. 
-- **Author Increase (AI):** Number of new authors interacting on the instance's topic at time t.
-- **Attention Level (AS(NA)):** Measure of the attention paid to an instance's topic on the social media.
-- **Burstiness Level (BL):** Burstiness level for a topic z at time t, defined as the ratio of NCD/NAD. 
-- **Number of Atomic Containers (NAC):** Measures the total number of atomic containers generated through the social media on the instance's topic until time t.
-- **Attention Level (AS(NAC)):** Measure of the attention paid to the instance's topic on a social media.
-- **Contribution Sparseness (CS):** Measure of spreading of contributions over discussion for the instance's topic at time t. 
-- **Author Interaction (AT):** Measures the average number of authors interacting on the instance's topic within a discussion.
-- **Number of Authors (NA):** Measures the number of authors interacting on the instance's topic at time t.
-- **Average Discussions Length (ADL):** Measures the average length of a discussion belonging to an instance's topic.
-- **Average Discussions Length (NAD):** Measures the number of discussions involving the instance's topic until time t. 
-
-# Data Loading
-
-# EDA
-The dataset included descriptive statistics on the features.
-NCD:
 <table>
   <thead>
     <tr><th colspan="5"><strong>NCD</strong></th></tr>
@@ -40,7 +20,8 @@ NCD:
     <tr><td>NCD_6</td><td>0</td><td>79079</td><td>219.388</td><td>672.182</td></tr>
   </tbody>
 </table>
-AI:
+
+- **Author Increase (AI):** Number of new authors interacting on the instance's topic at time t.
 <table>
   <thead>
     <tr><th colspan="5"><strong>AI</strong></th></tr>
@@ -56,7 +37,8 @@ AI:
     <tr><td>AI_6</td><td>0</td><td>63147</td><td>112.941</td><td>326.015</td></tr>
   </tbody>
 </table>
-AS(NA):
+
+- **Attention Level (AS(NA)):** Measure of the attention paid to an instance's topic on the social media.
 <table>
   <thead>
     <tr><th colspan="5"><strong>AS(NA)</strong></th></tr>
@@ -72,7 +54,8 @@ AS(NA):
     <tr><td>AS(NA)_6</td><td>0</td><td>0.095</td><td>0.000</td><td>0.001</td></tr>
   </tbody>
 </table>
-BL:
+
+- **Burstiness Level (BL):** Burstiness level for a topic z at time t, defined as the ratio of NCD/NAD. 
 <table>
   <thead>
     <tr><th colspan="5"><strong>BL</strong></th></tr>
@@ -88,7 +71,8 @@ BL:
     <tr><td>BL_6</td><td>0</td><td>1</td><td>0.955</td><td>0.197</td></tr>
   </tbody>
 </table>
-NAC:
+
+- **Number of Atomic Containers (NAC):** Measures the total number of atomic containers generated through the social media on the instance's topic until time t.
 <table>
   <thead>
     <tr><th colspan="5"><strong>NAC</strong></th></tr>
@@ -104,7 +88,8 @@ NAC:
     <tr><td>NAC_6</td><td>0</td><td>79136</td><td>233.236</td><td>696.419</td></tr>
   </tbody>
 </table>
-AS(NAC):
+
+- **Attention Level (AS(NAC)):** Measure of the attention paid to the instance's topic on a social media.
 <table>
   <thead>
     <tr><th colspan="5"><strong>AS(NAC)</strong></th></tr>
@@ -120,7 +105,8 @@ AS(NAC):
     <tr><td>AS(NAC)_6</td><td>0</td><td>0.046</td><td>0.000</td><td>0.000</td></tr>
   </tbody>
 </table>
-CS:
+
+- **Contribution Sparseness (CS):** Measure of spreading of contributions over discussion for the instance's topic at time t. 
 <table>
   <thead>
     <tr><th colspan="5"><strong>CS</strong></th></tr>
@@ -137,7 +123,7 @@ CS:
   </tbody>
 </table>
 
-AT:
+- **Author Interaction (AT):** Measures the average number of authors interacting on the instance's topic within a discussion.
 <table>
   <thead>
     <tr><th colspan="5"><strong>AT</strong></th></tr>
@@ -154,7 +140,7 @@ AT:
   </tbody>
 </table>
 
-NA:
+- **Number of Authors (NA):** Measures the number of authors interacting on the instance's topic at time t.
 <table>
   <thead>
     <tr><th colspan="5"><strong>NA</strong></th></tr>
@@ -171,7 +157,7 @@ NA:
   </tbody>
 </table>
 
-ADL:
+- **Average Discussions Length (ADL):** Measures the average length of a discussion belonging to an instance's topic.
 <table>
   <thead>
     <tr><th colspan="5"><strong>ADL</strong></th></tr>
@@ -188,7 +174,7 @@ ADL:
   </tbody>
 </table>
 
-NAD:
+- **Average Discussions Length (NAD):** Measures the number of discussions involving the instance's topic until time t. 
 <table>
   <thead>
     <tr><th colspan="5"><strong>NAD</strong></th></tr>
@@ -204,6 +190,11 @@ NAD:
     <tr><td>NAD_6</td><td>0</td><td>79083</td><td>219.937</td><td>673.032</td></tr>
   </tbody>
 </table>
+
+# Data Loading
+
+# EDA
+The dataset included descriptive statistics on the features.
 
 # Data Cleaning
 There are no missing values in the dataset.
