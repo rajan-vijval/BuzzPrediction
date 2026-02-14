@@ -467,14 +467,49 @@ We note that many of the features are heavily right skewed.
 # Data Cleaning
 There are no missing values in the dataset.
 
-
-
 # Research Questions
 
-Q1: Which features are highly predictive of the target?
-The RandomForestRegressor was used to build 
+#### Q1: Which features are highly predictive of the target?
+The RandomForestRegressor was used to build a predictive model and was used to measure feature importances. The model was trained on the full set of features and also groupings of the features.
 
-Q2: How does time affect the target?
-Q3: Which model is effective in predicting the target with the features?
+The features were grouped by adding features. BurstinessLevel is defined as a ratio between NumNewDiscussions and NumDiscussions, so this feature group was created after grouping the rest of the features. 
+
+ContributionSpread and AverageDiscussionLength were also ratio features but their derivations were not written in the dataset dictionary. These features were dropped from the aggregation analysis.
+
+![Aggregated Feature Importances](images/agg_feature_importances.png)
+NumNewDiscussions, NumDiscussions, NumContributions were the leading features predictive of the target buzz. In particular, NumNewDiscussions (0.76457) and NumDiscussions (0.11175) were highly predictive of the target.
+
+![Random Forest Feature Importances](images/random_forest_feature_importances.png) NumNewDiscussions_6 (0.50947) and NumDiscussions_6 (0.39729) were the leading predictors of the buzz target. In the Top 20 Feature Importances, 5 (NumAtomicContainers_6 [0.00618], AttentionPaid_6 [0.0051], NumAuthorsInteracting_6 [0.004469]) of the top 10 feature importances were from the 6th timestep group.
+
+#### Q2: How does time affect the target?
+![Feature Correlations Target](images/Feature_Correlations_Target.png)
+NumNewAuthors, AttentionPaid, NumAtomicContainers, AuthorInteraction, NumAuthorsInteracting are highly correlated with the target.
+
+BurstinessLevel, ContributionSpread, AverageDiscussionLength, NumDiscussions are less correlated with the target.
+
+![Feature Correlations Grouped Time](images/Features_Correlations_Grouped_Time.png)
+We notice that Timestamp 5 and 6 are the most correlated with the buzz target. 
+
+Timestamp 0 and 1 are also highly correlated with the target.
+
+Timestamp 2, 3, and 4 are less correlated with the target than timestamp 0 and 1. AverageDiscussionLength_5 and AverageDiscussionLength_6 are negatively correlated with the target.
+
+It is notable that Timestamp 5 and 6 are the most correlated with the target. 
+
+BurstinessLevel, ContributionSpread, AuthorInteraction, and AverageDiscussionLength are the less correlated with the target.
+
+NumNewDiscussions, NumDiscussions, NumAtomicContainers, NumAuthorsInteracting, NumContributions, AttentionPaid, and NumNewAuthors are highly correlated with the target.
+
+#### Q3: Which model is effective in predicting the target with the features?
+This analysis trained 3 types of models (KNNRegressor, MLPRegressor, and GBTrees) to make predictions. The KNNRegressor was used to distance based regression methods. The MLPRegressor was used to represent a neural network in the final predictor. The GBTrees predictor was used to represent decision trees.
+
+The KNNRegressor was tuned to find the optimal number of neighbors using the elbow method. The optimal number of neighbors was 7. 
+
+The final regressor was a voting regressor which combined all 3 models. It achieved a .96 accuracy on the training set and a .91 accuracy on the test set. 
 
 # Conclusions
+NumNewDiscussions, NumDiscussions, and NumContributions were highly predictive of the target.
+
+Time groups 0 and 1, along with groups 5 and 6 were highly correlated with the target. 
+
+The final regressor achieved a .91 accuracy on the test set.
