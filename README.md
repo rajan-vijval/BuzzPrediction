@@ -291,12 +291,12 @@ NumNewDiscussions, NumDiscussions, NumContributions were the leading features pr
 ![Random Forest Feature Importances](images/random_forest_feature_importances.png) NumNewDiscussions_6 (0.50947) and NumDiscussions_6 (0.39729) were the leading predictors of the buzz target. In the Top 20 Feature Importances, 5 (NumAtomicContainers_6 [0.00618], AttentionPaid_6 [0.0051], NumAuthorsInteracting_6 [0.004469]) of the top 10 feature importances were from the 6th timestep group.
 
 #### Q2: How does time affect the target?
-![Feature Correlations Target](images/Feature_Correlations_Target.png)
+![Feature Correlations Target](images/Feature_Correlations_Target.png)<br>
 NumNewAuthors, AttentionPaid, NumAtomicContainers, AuthorInteraction, NumAuthorsInteracting are highly correlated with the target.
 
 BurstinessLevel, ContributionSpread, AverageDiscussionLength, NumDiscussions are less correlated with the target.
 
-![Feature Correlations Grouped Time](images/Features_Correlations_Grouped_Time.png)
+![Feature Correlations Grouped Time](images/Features_Correlations_Grouped_Time.png)<br>
 We notice that Timestamp 5 and 6 are the most correlated with the buzz target. 
 
 Timestamp 0 and 1 are also highly correlated with the target.
