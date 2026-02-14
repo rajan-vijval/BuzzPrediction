@@ -180,6 +180,31 @@ The dataset included descriptive statistics on the feature groups. This analysis
     </tr>
   </tbody>
 </table>
+**NumNewDiscussions:** We note that NumNewDiscussions has a large range of [0.0, 79079.0]. Each of the features have a mean ranging from [136.77, 220.18], and the std is greater than 3x the mean. 
+
+**NumNewAuthors:** NumNewAuthors has a range of [0.0, 63147.0]. Each of the timestamped features have a mean ranging from [69.83, 113.61]. The std for these features is around 3x the mean.
+
+**AttentionPaid:** AttentionPaid has a range of [0.0, .0811]. The mean ranges from [0.0002, 0.0003]. Each of the timestamped features has a std of 2-3x the mean. 
+
+**BurstinessLevel:** BurstinessLevel has a range of [0.0, 1.0]. The mean ranges from [0.0, 1.0]. The std is 1/5x the mean.
+
+**NumAtomicContainers:** NumAtomicContainers has a range of [0.0, 79136.0]. The mean ranges from [146.64, 234.22]. The std is 3x the mean.
+
+**NumContributions:** NumContributions has a range of [0.0, 0.0460]. The mean ranges from [0.0001, 0.0002]. The std is 2-3x the mean.
+
+**ContributionSpread:** ContributionSpread has a range [0.0, 1.0]. The mean ranges from [0.9116, 0.9609]. The std is 1/4x the mean.
+
+**AuthorInteraction:** The range is from [0.0, 283.0]. The mean ranges from [1.0170, 1.0818]. The std is 1.2-1.5x the mean.
+
+**NumAuthorsInteracting:** The range is from [0.0, 72159.0]. The mean ranges from [119.58, 189.52]. The std is 2-3x the mean.
+
+**AverageDiscussionLength:** The range is from [0.0, 295.0]. The mean ranges from [1.0667, 1.1404]. The std is 1.3-1.4x the mean.
+
+**NumDiscussions:** The range is from [0.0, 79083.0]. The mean ranges from [137.18, 220.71]. The std is 2-3x the mean.
+
+**DiscussionsPerAuthor:** The range is from [0.0, 1.0]. The mean ranges from [0.8613, 0.9056]. The std is 1/3 the mean.
+
+**AttentionPerAuthor:** The range is from [0.0, 63.111]. The mean ranges from [0.4944, 0.5398]. The std is 0.5-0.6x the mean.
 
 <table>
   <thead>
