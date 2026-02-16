@@ -1,14 +1,14 @@
 Link to dataset: https://archive.ics.uci.edu/dataset/248/buzz+in+social+media
 
 # Introduction
-This notebook analyzes the Twitter dataset from the Buzz Prediction dataset. The target variable is the mean number of active discussions (NAD) of an instance's topic. Each row is a measurement of a feature of a topic *z*, with each feature representing a time *t* in (0,6).
+This notebook analyzes the Twitter dataset from the Buzz Prediction dataset. The target variable is the mean number of active discussions (NAD) of an instance's topic. Each row is a measurement of a feature of a topic **z**, with each feature representing a time **t** in (0,6).
 
 There are 11 features in the Twitter dataset. Each are marked with a suffix [0, 6] denoting a timestamp. The dataset description included descriptive statistics on the features.
 
 # Data Loading
 The Twitter dataset contained 583,250 rows and 78 columns. The columns measured various statistics about the social media platform.
 
-The features were split into 11 groups. Each group was measured at a time *t* in 7 periods. The features were renamed in the working dataset as listed in the table below.
+The features were split into 11 groups. Each group was measured at a time **t** in 7 periods. The features were renamed in the working dataset as listed in the table below.
 
 The target feature measured the mean number of active discussions.
 
@@ -38,9 +38,9 @@ The target feature measured the mean number of active discussions.
 # Feature Engineering
 This analysis created 2 features called **DiscussionsPerAuthor** and **AttentionPerAuthor**.
 
-DiscussionsPerAuthor_t was defined as the ratio between ContributionSpread_t and AuthorInteraction_t at time *t*. 
+DiscussionsPerAuthor_t was defined as the ratio between ContributionSpread_t and AuthorInteraction_t at time **t**. 
 
-AttentionPerAuthor_t was defined as the ratio between NumContributions_t and AttentionPaid_t at time *t*.
+AttentionPerAuthor_t was defined as the ratio between NumContributions_t and AttentionPaid_t at time **t**.
 
 The BurstinessLevel feature was an existing ratio feature, and it used 0.0 in place of 0/0 divisions. This analysis made the same modification to the DiscussionsPerAuthor and AttentionPerAuthor features.
 
@@ -180,6 +180,7 @@ The dataset included descriptive statistics on the feature groups. This analysis
     </tr>
   </tbody>
 </table>
+
 **NumNewDiscussions:** We note that NumNewDiscussions has a large range of [0.0, 79079.0]. Each of the features have a mean ranging from [136.77, 220.18], and the std is greater than 3x the mean. 
 
 **NumNewAuthors:** NumNewAuthors has a range of [0.0, 63147.0]. Each of the timestamped features have a mean ranging from [69.83, 113.61]. The std for these features is around 3x the mean.
