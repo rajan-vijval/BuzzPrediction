@@ -342,6 +342,61 @@ The KNNRegressor was tuned to find the optimal number of neighbors using the elb
 
 The final regressor was a voting regressor which combined all 3 models. It achieved a .96 accuracy on the training set and a .91 accuracy on the test set. 
 
+<table align="center">
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Best Parameters</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>KNN</td>
+      <td>n_neighbors=6</td>
+    </tr>
+    <tr>
+      <td>MLP</td>
+      <td>hidden_layer_sizes=(100, 50), activation=, solver=,learning_rate_init=, alpha=0.001, max_iter=500</td>
+    </tr>
+    <tr>
+      <td>GBT</td>
+      <td>n_estimators=200, max_depth=6, learning_rate=0.1, min_samples_split=, subsample=, min_samples_leaf=</td>
+    </tr>
+  </tbody>
+</table>
+
+<table align="center">
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Accuracy</th>
+      <th>Tuned accuracy</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>KNN</td>
+      <td>0.94458</td>
+      <td>In Progress</td>
+    </tr>
+    <tr>
+      <td>MLP</td>
+      <td>0.95430</td>
+      <td>In Progress</td>
+    </tr>
+    <tr>
+      <td>GBT</td>
+      <td>0.90546</td>
+      <td>In Progress</td>
+    </tr>
+    <tr>
+      <td>VotingRegressor</td>
+      <td>0.90578</td>
+      <td>In Progress</td>
+    </tr>
+  </tbody>
+</table>
+
 # Conclusions
 NumNewDiscussions, NumDiscussions, and NumContributions were highly predictive of the target.
 
