@@ -364,6 +364,7 @@ The final regressor was a voting regressor which combined all 3 models. It achie
     </tr>
   </tbody>
 </table>
+<br>
 
 <table align="center">
   <thead>
