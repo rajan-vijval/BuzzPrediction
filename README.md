@@ -360,7 +360,7 @@ The final regressor was a voting regressor which combined all 3 models. It achie
     </tr>
     <tr>
       <td>GBT</td>
-      <td>n_estimators=200, max_depth=6, learning_rate=0.1, min_samples_split=, subsample=, min_samples_leaf=</td>
+      <td>n_estimators=500, max_depth=7, learning_rate=0.1, min_samples_split=10, subsample=1.0, min_samples_leaf=2</td>
     </tr>
   </tbody>
 </table>
@@ -378,7 +378,7 @@ The final regressor was a voting regressor which combined all 3 models. It achie
     <tr>
       <td>KNN</td>
       <td>0.94458</td>
-      <td>In Progress</td>
+      <td>0.92987</td>
     </tr>
     <tr>
       <td>MLP</td>
@@ -388,7 +388,7 @@ The final regressor was a voting regressor which combined all 3 models. It achie
     <tr>
       <td>GBT</td>
       <td>0.90546</td>
-      <td>In Progress</td>
+      <td></td>
     </tr>
     <tr>
       <td>VotingRegressor</td>
