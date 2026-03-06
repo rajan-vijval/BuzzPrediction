@@ -384,7 +384,7 @@ The final regressor was a voting regressor which combined all 3 models. It achie
     <tr>
       <td>MLP</td>
       <td>0.95430</td>
-      <td>0.93651</td>
+      <td>0.95946</td>
     </tr>
     <tr>
       <td>GBT</td>
@@ -394,7 +394,7 @@ The final regressor was a voting regressor which combined all 3 models. It achie
     <tr>
       <td>VotingRegressor</td>
       <td>0.90578</td>
-      <td>In Progress</td>
+      <td>0.95930</td>
     </tr>
   </tbody>
 </table>
@@ -404,4 +404,4 @@ NumNewDiscussions, NumDiscussions, and NumContributions were highly predictive o
 
 Time groups 0 and 1, along with groups 5 and 6 were highly correlated with the target. 
 
-The final regressor achieved a .91 accuracy on the test set.
+The final regressor achieved a .96 accuracy on the test set.
