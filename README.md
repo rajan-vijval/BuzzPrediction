@@ -389,7 +389,7 @@ The final regressor was a voting regressor which combined all 3 models. It achie
     <tr>
       <td>GBT</td>
       <td>0.90546</td>
-      <td></td>
+      <td>0.95521</td>
     </tr>
     <tr>
       <td>VotingRegressor</td>
