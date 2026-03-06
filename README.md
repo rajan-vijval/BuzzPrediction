@@ -356,7 +356,8 @@ The final regressor was a voting regressor which combined all 3 models. It achie
     </tr>
     <tr>
       <td>MLP</td>
-      <td>hidden_layer_sizes=(100, 50), activation=, solver=,learning_rate_init=, alpha=0.001, max_iter=500</td>
+      <td>solver='lbfgs', max_iter=1000, learning_rate_init=0.01, hidden_layer_sizes=(100, 50), alpha=0.0001, activation=relu
+      </td>
     </tr>
     <tr>
       <td>GBT</td>
