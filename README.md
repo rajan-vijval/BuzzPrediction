@@ -384,7 +384,7 @@ The final regressor was a voting regressor which combined all 3 models. It achie
     <tr>
       <td>MLP</td>
       <td>0.95430</td>
-      <td>In Progress</td>
+      <td>0.93651</td>
     </tr>
     <tr>
       <td>GBT</td>
