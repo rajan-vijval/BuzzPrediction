@@ -367,12 +367,56 @@ The final regressor was a voting regressor which combined all 3 models. It achie
 </table>
 <br>
 
+<table>
+  <thead>
+    <tr>
+      <th colspan="2" style="text-align: center;">Target Variable: Social Media Buzz (Descriptive Stats)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Count</strong></td>
+      <td align="right">583,250</td>
+    </tr>
+    <tr>
+      <td><strong>Mean</strong></td>
+      <td align="right">191.28</td>
+    </tr>
+    <tr>
+      <td><strong>Std. Deviation</strong></td>
+      <td align="right">612.35</td>
+    </tr>
+    <tr>
+      <td><strong>Minimum</strong></td>
+      <td align="right">0.00</td>
+    </tr>
+    <tr>
+      <td><strong>25th Percentile (Q1)</strong></td>
+      <td align="right">4.50</td>
+    </tr>
+    <tr>
+      <td><strong>50th Percentile (Median)</strong></td>
+      <td align="right">25.50</td>
+    </tr>
+    <tr>
+      <td><strong>75th Percentile (Q3)</strong></td>
+      <td align="right">139.00</td>
+    </tr>
+    <tr>
+      <td><strong>Maximum</strong></td>
+      <td align="right">75,724.50</td>
+    </tr>
+  </tbody>
+</table>
+
 <table align="center">
   <thead>
     <tr>
       <th>Model</th>
       <th>R2 Score</th>
       <th>Tuned R2 Score</th>
+      <th>Tuned MAE Score</th>
+      <th>Tuned RMSE Score</th>
     </tr>
   </thead>
   <tbody>
@@ -380,21 +424,29 @@ The final regressor was a voting regressor which combined all 3 models. It achie
       <td>KNN</td>
       <td>0.94458</td>
       <td>0.92987</td>
+      <td>14724.79724</td>
+      <td>19132.069190</td>
     </tr>
     <tr>
       <td>MLP</td>
       <td>0.95430</td>
       <td>0.95946</td>
+      <td>31.65862</td>
+      <td>86.17672</td>
     </tr>
     <tr>
       <td>GBT</td>
       <td>0.90546</td>
       <td>0.95521</td>
+      <td>31.65862</td>
+      <td>86.17672</td>
     </tr>
     <tr>
       <td>VotingRegressor</td>
       <td>0.90578</td>
       <td>0.95930</td>
+      <td>33.88781</td>
+      <td>96.64141</td>
     </tr>
   </tbody>
 </table>
