@@ -409,6 +409,10 @@ The final regressor was a voting regressor which combined all 3 models. It achie
   </tbody>
 </table>
 
+<br>
+
+![Distribution of Target](images/buzz_distribution.png)<br>
+
 <table align="center">
   <thead>
     <tr>
