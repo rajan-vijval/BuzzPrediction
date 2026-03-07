@@ -371,8 +371,8 @@ The final regressor was a voting regressor which combined all 3 models. It achie
   <thead>
     <tr>
       <th>Model</th>
-      <th>Accuracy</th>
-      <th>Tuned accuracy</th>
+      <th>R2 Score</th>
+      <th>Tuned R2 Score</th>
     </tr>
   </thead>
   <tbody>
@@ -404,4 +404,4 @@ NumNewDiscussions, NumDiscussions, and NumContributions were highly predictive o
 
 Time groups 0 and 1, along with groups 5 and 6 were highly correlated with the target. 
 
-The final regressor achieved a .96 accuracy on the test set.
+The final regressor achieved a .96 R2 score on the test set.
