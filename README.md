@@ -429,14 +429,14 @@ The final regressor was a voting regressor which combined all 3 models. It achie
       <td>0.94458</td>
       <td>0.92987</td>
       <td>14724.79724</td>
-      <td>19132.069190</td>
+      <td>19132.06919</td>
     </tr>
     <tr>
       <td>MLP</td>
       <td>0.95430</td>
       <td>0.95946</td>
-      <td>31.65862</td>
-      <td>86.17672</td>
+      <td>57156.40849</td>
+      <td>203483.88420</td>
     </tr>
     <tr>
       <td>GBT</td>
